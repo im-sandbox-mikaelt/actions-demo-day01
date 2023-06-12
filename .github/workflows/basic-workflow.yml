@@ -37,5 +37,5 @@ jobs:
 
       # Runs only if PR
       - name: Run only if PR
-        if: ${{ github.event_name != 'pull-request'}}
+        if: ${{ github.event_name == 'pull-request'}}
         run: echo Hello from the PR!
